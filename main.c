@@ -8,13 +8,16 @@ char* escolherPalavra(){
     char* palavra = (char*)malloc(tamanhoPalavra*sizeof(char));
     printf("escolha uma palavra: ");
     if(palavra == NULL){
+        char* error = "error";
         printf("erro\n");
-        return -1;
+        return error;
     }else{
     scanf("%49s", palavra);
     return palavra;
 }
 }
+
+void opcoes(void);
 
 void menu(){
     printf("1 - vetor binario\n");
@@ -45,41 +48,97 @@ void arvoreAVL(){
 }
 
 void casos(int opcoes){
+    clock_t inicioVetor, fimVetor,inicioArvoreB, fimArvoreB, inicioArvoreAVL, fimArvoreAVL;
+    double tempoGastoVetor, tempoGastoArvoreB, tempoGastoArvoreAVL;
     switch(opcoes){
     case 1:
+        inicioVetor = clock();
         vetorBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        printf("o tempo gasto por vetor binario foi%f\n", tempoGastoVetor);
         break;
     case 2:
+        inicioVetor = clock();
         arvoreBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        printf("o tempo gasto por arvore binarioa foi%f\n", tempoGastoArvoreB);
         break;
     case 3:
+        inicioArvoreAVL = clock();
         arvoreAVL();
+        fimArvoreAVL = clock();
+        tempoGastoArvoreAVL = fimArvoreAVL - inicioArvoreAVL;
+        printf("o tempo gasto por arvore AVL foi%f\n", tempoGastoArvoreAVL);
         break;
     case 4:
+        inicioVetor = clock();
         vetorBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        inicioVetor = clock();
         arvoreBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        printf("o tempo gasto por vetor binario foi%f\n", tempoGastoVetor);
+        printf("o tempo gasto por arvore binarioa foi%f\n", tempoGastoArvoreB);
         break;
     case 5:
+        inicioVetor = clock();
         vetorBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        inicioArvoreAVL = clock();
         arvoreAVL();
+        fimArvoreAVL = clock();
+        tempoGastoArvoreAVL = fimArvoreAVL - inicioArvoreAVL;
+        printf("o tempo gasto por vetor binario foi%f\n", tempoGastoVetor);
+        printf("o tempo gasto por arvore AVL foi%f\n", tempoGastoArvoreAVL);
         break;
     case 6:
+        inicioVetor = clock();
         arvoreBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        inicioArvoreAVL = clock();
         arvoreAVL();
+        fimArvoreAVL = clock();
+        tempoGastoArvoreAVL = fimArvoreAVL - inicioArvoreAVL;
+        printf("o tempo gasto por arvore binarioa foi%f\n", tempoGastoArvoreB);
+        printf("o tempo gasto por arvore AVL foi%f\n", tempoGastoArvoreAVL);
         break;
     case 7:
+        inicioVetor = clock();
         vetorBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        inicioVetor = clock();
         arvoreBinario();
+        fimVetor = clock();
+        tempoGastoVetor = fimVetor - inicioVetor;
+        inicioArvoreAVL = clock();
         arvoreAVL();
+        fimArvoreAVL = clock();
+        tempoGastoArvoreAVL = fimArvoreAVL - inicioArvoreAVL;
+        printf("o tempo gasto por vetor binario foi%f\n", tempoGastoVetor);
+        printf("o tempo gasto por arvore binarioa foi%f\n", tempoGastoArvoreB);
+        printf("o tempo gasto por arvore AVL foi%f\n", tempoGastoArvoreAVL);
         break;
     }
 }
 
+void primeiraEstrofe(FILE *arquivo){
+    char linha[100];
+    while(fgets(linha, sizeof(linha), arquivo) != NULL){
+        printf("%s", linha);
+    }
+}
 
 
 int main()
 {
-    char* escolherPalavra = escolherPalavra();
+    char *palavraEscolhida = escolherPalavra();
     menu();
     return 0;
 }
