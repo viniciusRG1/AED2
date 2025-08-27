@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1756306756 source:c:\users\vinicius\documents\ead2\projetoaed2\bst.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"bst.h"
+
+1756307409 c:\users\vinicius\documents\ead2\projetoaed2\bst.h
+	"estrutura.h"
+
+1756301022 c:\users\vinicius\documents\ead2\projetoaed2\structures.h
+
+1756300734 source:c:\users\vinicius\documents\ead2\projetoaed2\file_processor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<dirent.h>
+	"file_processor.h"
+
+1756302559 c:\users\vinicius\documents\ead2\projetoaed2\file_processor.h
+	"structures.h"
+	"vector_utils.h"
+	"bst.h"
+	"avl.h"
+
+1756301051 c:\users\vinicius\documents\ead2\projetoaed2\vector_utils.h
+	"structures.h"
+
+1756307418 c:\users\vinicius\documents\ead2\projetoaed2\avl.h
+	"estrutura.h"
+
+1756301029 source:c:\users\vinicius\documents\ead2\projetoaed2\vector_utils.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"vector_utils.h"
+
+1756307563 source:c:\users\vinicius\documents\ead2\projetoaed2\avl.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"avl.h"
+	"bst.h"
+
+1756301985 source:c:\users\vinicius\documents\ead2\projetoaed2\avl_freq.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"avl_freq.h"
+
+1756300464 c:\users\vinicius\documents\ead2\projetoaed2\avl_freq.h
+	"structures.h"
+
+1756307464 source:c:\users\vinicius\documents\ead2\projetoaed2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"estrutura.h"
+	"pesquisaBinaria.h"
+	"bst.h"
+	"avl.h"
+	"avlFrequencia.h"
+	"carregarMusicas.h"
+
+1756307542 source:c:\users\vinicius\documents\ead2\projetoaed2\avlfrequencia.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"avlFrequencia.h"
+
+1756307414 c:\users\vinicius\documents\ead2\projetoaed2\avlfrequencia.h
+	"estrutura.h"
+
+1756307395 c:\users\vinicius\documents\ead2\projetoaed2\estrutura.h
+
+1756308901 source:c:\users\vinicius\documents\ead2\projetoaed2\carregarmusicas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<dirent.h>
+	"carregarMusicas.h"
+
+1756308831 c:\users\vinicius\documents\ead2\projetoaed2\carregarmusicas.h
+	"estrutura.h"
+	"pesquisaBinaria.h"
+	"bst.h"
+	"avl.h"
+
+1756307380 c:\users\vinicius\documents\ead2\projetoaed2\pesquisabinaria.h
+	"estrutura.h"
+
+1756307426 source:c:\users\vinicius\documents\ead2\projetoaed2\pesquisabinaria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pesquisaBinaria.h"
+
